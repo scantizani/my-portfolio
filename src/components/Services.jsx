@@ -1,5 +1,6 @@
 import React from 'react';
-import { FaShieldAlt, FaCode, FaCloud, FaBug, FaTools } from 'react-icons/fa';
+import { FaCode, FaShieldAlt, FaLaptopCode } from "react-icons/fa";
+import { FaBug } from 'react-icons/fa';
 
 const services = [
   {
