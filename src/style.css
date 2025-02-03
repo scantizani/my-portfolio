@@ -1,0 +1,376 @@
+/* ===== Global Styles ===== */
+body {
+  background-color: #121212; /* Fundo preto */
+  color: #fff; /* Texto branco */
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  color: #fff;
+  font-size: 28px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 20px;
+  margin-bottom: 5px;
+  color: #00bcd4;
+}
+
+p {
+  color: #ccc;
+}
+
+/* ===== Navigation Bar ===== */
+nav {
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+  background-color: #222;
+}
+
+nav a {
+  color: #00bcd4 !important; /* Cor azul igual aos ícones do Services */
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* ===== About Page ===== */
+.profile-photo {
+  width: 200px;  
+  height: auto;  
+  border-radius: 10px; 
+  display: block;
+  margin: 20px auto; 
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.about-container {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+  background-color: #222;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* ===== Projects Page ===== */
+.projects-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.project-card {
+  display: flex;
+  align-items: center;
+  background-color: #222;
+  padding: 15px;
+  border-radius: 8px;
+  margin: 20px 0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.project-card:hover {
+  transform: scale(1.02);
+}
+
+.project-image {
+  width: 150px;
+  height: auto;
+  border-radius: 5px;
+  margin-right: 20px;
+}
+
+.project-info {
+  text-align: left;
+  color: #fff;
+}
+
+/* ===== Contact Page ===== */
+.contact-container {
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 30px;  /* Aumentamos o padding geral */
+  background-color: #222;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+
+/* Organizando os inputs */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+}
+
+/* Melhorando os labels */
+.input-group label {
+  font-weight: bold;
+  color: #00bcd4;
+  margin-bottom: 6px;
+  font-size: 14px;
+}
+
+/* Melhorando os campos de entrada */
+.input-group input,
+.input-group textarea {
+  width: 95%;
+  padding: 14px; /* Adicionamos mais padding para conforto */
+  border: 1px solid #444;
+  background-color: #333;
+  color: #fff;
+  border-radius: 6px;
+  font-size: 16px;
+  transition: border 0.3s ease-in-out;
+}
+
+/* Ajuste no campo de mensagem (textarea) */
+.input-group textarea {
+  min-height: 120px;
+  resize: vertical;
+  padding: 14px; /* Adicionamos padding para não encostar na borda */
+}
+
+/* Adicionando efeito ao focar */
+.input-group input:focus,
+.input-group textarea:focus {
+  border: 1px solid #00bcd4;
+  outline: none;
+}
+
+/* Melhorando o botão */
+.contact-btn {
+  width: 100%;
+  max-width: 220px;
+  background-color: #00bcd4;
+  color: #fff;
+  padding: 14px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.3s ease-in-out, transform 0.2s;
+}
+
+/* Efeito hover para melhorar a usabilidade */
+.contact-btn:hover {
+  background-color: #0097a7;
+  transform: scale(1.05);
+}
+
+/*Services Page*/
+.services-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.service-card {
+  display: flex;
+  align-items: center; /* Centraliza os ícones e os textos */
+  background-color: #222;
+  padding: 15px;
+  border-radius: 8px;
+  margin: 20px 0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+  gap: 15px; /* Espaço entre o ícone e o texto */
+}
+
+.service-card:hover {
+  transform: scale(1.02);
+}
+
+.service-icon {
+  font-size: 40px; /* Tamanho dos ícones */
+  color: #00bcd4; /* Cor do ícone */
+  margin-right: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.service-text {
+  text-align: left; /* Mantém o texto alinhado à esquerda */
+}
+
+.service-title {
+  font-size: 18px;
+  color: #00bcd4;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.service-description {
+  color: #ccc;
+  margin: 0;
+}
+
+h1 {
+  color: #fff;
+  font-size: 28px;
+}
+
+h2 {
+  font-size: 20px;
+  margin-bottom: 5px;
+  color: #00bcd4;
+}
+
+p {
+  color: #ccc;
+}
+
+/*Education Page*/
+.education-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.education-card {
+  display: flex;
+  align-items: center;
+  background-color: #222;
+  padding: 15px;
+  border-radius: 8px;
+  margin: 20px 0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.education-card:hover {
+  transform: scale(1.02);
+}
+
+.education-logo {
+  width: 80px; /* Tamanho das logos */
+  height: auto;
+  margin-right: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.education-info {
+  text-align: left;
+  color: #fff;
+}
+
+.education-info h2 {
+  font-size: 20px;
+  margin-bottom: 5px;
+  color: #00bcd4;
+}
+
+.education-info p {
+  color: #ccc;
+}
+
+/*Home Page*/
+body {
+  background-color: #121212;
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.home-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.home-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.profile-photo {
+  width: 200px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.home-text {
+  text-align: left;
+  max-width: 500px;
+}
+
+.tech-stack {
+  margin-top: 40px;
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.tech-icon {
+  transition: transform 0.3s;
+}
+
+.tech-icon:hover {
+  transform: scale(1.1);
+}
+
+html, body {
+  background-color: #121212 !important;
+  color: #ffffff !important;
+  margin: 0;
+  padding: 0;
+}
+
+/* Standard Button Style (aplicável para múltiplas páginas) */
+.standard-btn {
+  width: 100%;
+  max-width: 220px;
+  background-color: #00bcd4;
+  color: #fff;
+  padding: 14px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  transition: background 0.3s ease-in-out, transform 0.2s;
+  display: inline-block;
+}
+
+/* Hover effect for a more interactive experience */
+.standard-btn:hover {
+  background-color: #0097a7;
+  transform: scale(1.05);
+}
