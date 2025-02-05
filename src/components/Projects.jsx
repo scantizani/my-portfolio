@@ -1,26 +1,26 @@
-import React from 'react';
-import CyberImage from '../assets/Cyber.jpg';
-import ReactPortfolioImage from '../assets/reactPortfolio.jpg';
-import EcommerceImage from '../assets/ecommerce.jpg';
+import React from "react";
+import Cyber from '../assets/Cyber.jpg';
+import react from '../assets/react.jpg';
+import ecommerce from '../assets/ecommerce.jpg';
 
 const projects = [
   {
     title: 'Cyber Security Audit',
     description: 'Audited the security system of a global company.',
     result: 'Reduced critical vulnerabilities by 40% and improved ISO 27001 compliance.',
-    image: CyberImage
+    image: Cyber
   },
   {
     title: 'React Portfolio Website',
     description: 'Developed my personal portfolio using React and Vite.',
     result: 'Created a fully responsive and interactive website to showcase my skills.',
-    image: ReactPortfolioImage
+    image: react
   },
   {
     title: 'E-commerce Security Enhancement',
     description: 'Implemented security measures for an online store.',
     result: 'Improved the platform’s security and prevented data leaks.',
-    image: EcommerceImage
+    image: ecommerce
   }
 ];
 
